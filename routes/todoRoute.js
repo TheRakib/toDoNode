@@ -68,7 +68,20 @@ router.post("/edit", async (req, res) => {
       name: req.body.name,
     }
   );
-
+// you could do something like :
+  
+   /*   res.render("index.ejs", {
+      data,
+      totalData,
+      totalDataPart,
+      dataToShow,
+      dataToShowPerReq,
+      error: "empty",
+    });  
+    
+    same as / route to have the same look and feel
+    
+    */ 
   res.redirect("/");
 });
 
